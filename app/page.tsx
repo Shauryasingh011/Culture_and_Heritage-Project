@@ -156,7 +156,7 @@ const allStates = [
     id: "odisha",
     name: "Odisha",
     description: "Land of temples with classical dance and coastal beauty",
-    image: "/odisha-jagannath-temple-classical-dance-coast.png",
+    image: "/odisha-jagannath-temple-classical-dance-coast.jpg",
     highlights: ["Jagannath Temple", "Konark Sun Temple", "Chilika Lake"],
     region: "East",
   },
@@ -164,7 +164,7 @@ const allStates = [
     id: "punjab",
     name: "Punjab",
     description: "Land of five rivers with Golden Temple and vibrant culture",
-    image: "/punjab-golden-temple-wheat-fields-culture.png",
+    image: "/punjab-golden-temple-wheat-fields-culture.jpg",
     highlights: ["Golden Temple", "Wheat Fields", "Bhangra Dance"],
     region: "North",
   },
@@ -180,7 +180,7 @@ const allStates = [
     id: "sikkim",
     name: "Sikkim",
     description: "Himalayan paradise with monasteries and mountain peaks",
-    image: "/sikkim-monasteries-kanchenjunga-mountain-paradise.png",
+    image: "/sikkim-monasteries-kanchenjunga-mountain-paradise.jpg",
     highlights: ["Kanchenjunga", "Rumtek Monastery", "Gangtok"],
     region: "Northeast",
   },
@@ -188,7 +188,7 @@ const allStates = [
     id: "tamil-nadu",
     name: "Tamil Nadu",
     description: "Land of temples with classical arts and coastal heritage",
-    image: "/tamil-nadu-temples-classical-dance-marina-beach.png",
+    image: "/tamil-nadu-temples-classical-dance-marina-beach.jpg",
     highlights: ["Meenakshi Temple", "Marina Beach", "Bharatanatyam"],
     region: "South",
   },
@@ -196,7 +196,7 @@ const allStates = [
     id: "telangana",
     name: "Telangana",
     description: "Cyberabad with historic forts and modern IT industry",
-    image: "/telangana-hyderabad-charminar-it-industry.png",
+    image: "/telangana-hyderabad-charminar-it-industry.jpg",
     highlights: ["Charminar", "Ramoji Film City", "IT Hub"],
     region: "South",
   },
@@ -204,7 +204,7 @@ const allStates = [
     id: "tripura",
     name: "Tripura",
     description: "Land of diversity with palaces and tribal heritage",
-    image: "/tripura-ujjayanta-palace-tribal-heritage.png",
+    image: "/tripura-ujjayanta-palace-tribal-heritage.jpg",
     highlights: ["Ujjayanta Palace", "Neermahal", "Tribal Culture"],
     region: "Northeast",
   },
@@ -212,7 +212,7 @@ const allStates = [
     id: "uttar-pradesh",
     name: "Uttar Pradesh",
     description: "Heartland of India with Taj Mahal and spiritual cities",
-    image: "/uttar-pradesh-taj-mahal-varanasi-spiritual.png",
+    image: "/uttar-pradesh-taj-mahal-varanasi-spiritual.jpg",
     highlights: ["Taj Mahal", "Varanasi Ghats", "Ayodhya"],
     region: "North",
   },
@@ -220,7 +220,7 @@ const allStates = [
     id: "uttarakhand",
     name: "Uttarakhand",
     description: "Dev Bhoomi with holy rivers and Himalayan peaks",
-    image: "/uttarakhand-himalayan-peaks-holy-rivers-temples.png",
+    image: "/uttarakhand-himalayan-peaks-holy-rivers-temples.jpg",
     highlights: ["Char Dham", "Valley of Flowers", "Rishikesh"],
     region: "North",
   },
@@ -228,7 +228,7 @@ const allStates = [
     id: "west-bengal",
     name: "West Bengal",
     description: "Cultural capital with literature, art, and Sundarbans",
-    image: "/west-bengal-kolkata-sundarbans-cultural-heritage.png",
+    image: "/west-bengal-kolkata-sundarbans-cultural-heritage.jpg",
     highlights: ["Victoria Memorial", "Sundarbans", "Durga Puja"],
     region: "East",
   },
@@ -436,11 +436,11 @@ export default function HomePage() {
           {/* States Grid */}
           <StaggeredGrid className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {displayedStates.map((state, index) => (
-              <Card
-                key={state.id}
-                className="group cursor-pointer hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card border-border hover-lift"
-                onClick={() => (window.location.href = `/states/${state.id}`)}
-              >
+                  <Card
+                    key={state.id}
+                    className="group cursor-pointer hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card border-border hover-lift"
+                    onClick={() => window.location.href = `/states/${state.id}`}
+                  >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={state.image || "/placeholder.svg"}
