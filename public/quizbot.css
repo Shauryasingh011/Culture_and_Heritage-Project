@@ -1,0 +1,83 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+html,body{
+   height:100%;
+   width:100%;
+}
+main{
+    height: 100%;
+}
+
+
+body{
+    background-image: url("https://media.istockphoto.com/id/1341409072/photo/group-of-unrecognizable-females-showing-henna-hands.webp?a=1&b=1&s=612x612&w=0&k=20&c=eht7ypaHYOEsBaGxCauSH2riAZXbC0GYYJRQVLei7Yw=");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.app{
+    background-color:rgb(55, 109, 55);
+    height: 50%;
+    width:50%;
+    margin-top:10%;
+    margin-left: 25%;
+    border:2px black solid;
+    border-radius: 20px;
+}
+
+#Heading{
+    font-size: 225%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Dancing Script", cursive;
+    
+}
+#question{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.quiz{
+    padding-left: 20px;
+}
+
+#answer_button{
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn{
+    background-color:white;
+    font-weight: 200;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-weight: 200;
+}
+
+.btn:hover{
+   background-color: #2E294E;
+   color:#FFFFFF;
+}
+#next{
+    padding: 3px;
+    margin: 30px;
+    background-color: #2E294E;
+    color:#FFFFFF;
+    border-radius: 4px;
+    height:25%;
+    width:20%;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+#next:hover{
+    background-color: #137547;
+   
+}

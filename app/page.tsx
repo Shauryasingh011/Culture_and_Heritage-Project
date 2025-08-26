@@ -436,11 +436,17 @@ export default function HomePage() {
           {/* States Grid */}
           <StaggeredGrid className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {displayedStates.map((state, index) => (
-                  <Card
-                    key={state.id}
-                    className="group cursor-pointer hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card border-border hover-lift"
-                    onClick={() => window.location.href = `/states/${state.id}`}
-                  >
+                    <Card
+                      key={state.id}
+                      className="group cursor-pointer hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card border-border hover-lift"
+                      onClick={() => {
+                        if (state.id === "uttarakhand") {
+                          window.location.href = "/uttrakhand-details.html"
+                        } else {
+                          window.location.href = `/states/${state.id}`
+                        }
+                      }}
+                    >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={state.image || "/placeholder.svg"}
@@ -465,10 +471,14 @@ export default function HomePage() {
                   </div>
                   <Button
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover-glow"
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      window.location.href = `/states/${state.id}`
-                    }}
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        if (state.id === "uttarakhand") {
+                          window.location.href = "/uttrakhand-details.html"
+                        } else {
+                          window.location.href = `/states/${state.id}`
+                        }
+                      }}
                   >
                     Explore {state.name}
                   </Button>
